@@ -1,14 +1,14 @@
 package estructuras;
 
 
-public class PilaInt {
+public class PilaString {
 
-    private final int maxpila = 30;
-    private int[] elementos;
+    private final int maxpila = 10;
+    private String[] elementos;
     private int cima;
 
-    public PilaInt() {
-        elementos = new int[maxpila];
+    public PilaString() {
+        elementos = new String[maxpila];
         cima = -1;
     }
 
@@ -20,13 +20,13 @@ public class PilaInt {
         return (cima == maxpila - 1);
     }
 
-    public void meter(int e) {
+    public void meter(String e) {
         cima = cima + 1;
         elementos[cima] = e;
     }
 
-    public int sacar() {
-        int aux = elementos[cima];
+    public String sacar() {
+        String aux = elementos[cima];
         cima = cima - 1;
         return aux;
     }

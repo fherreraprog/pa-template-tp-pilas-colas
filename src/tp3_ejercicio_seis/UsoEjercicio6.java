@@ -15,6 +15,5 @@ public class UsoEjercicio6 {
 
         System.out.println("Segundo elemento (sin modificar): "
                 + Ejercicio6.segundoElementoSinModificar(pila));
-        System.out.println("La pila permanece sin cambios tras la consulta.");
     }
 }
